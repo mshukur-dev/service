@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
 * {
     padding: 0;
@@ -122,11 +123,49 @@ h3 {
     font-weight: 700;
 }
 
-.container{
+.container {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+.view {
+    display: none;
+}
 
-@media (max-width: 510px) {}
+
+
+.header {
+    background-color: #152C39;
+    padding: 32px 0;
+}
+
+
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.header_link {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header_location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 510px) {
+    .view {
+        display: block;
+    }
+    .none{
+        display: none;
+    }
+}
