@@ -275,10 +275,24 @@ h3 {
 
 
 
+.home {
+    display: flex;
+}
 
+.home_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    background-color: #476178;
+    max-width: 600px;
+    width: 100%;
+}
 
-
-
+.home_txt p {
+    width: 300px;
+}
 
 
 
@@ -343,5 +357,14 @@ h3 {
     .service_wrapper {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home_txt {
+        padding-top: 50px;
+        padding-bottom: 40px;
     }
 }
