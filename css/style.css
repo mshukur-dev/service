@@ -366,6 +366,32 @@ h3 {
     flex-direction: column;
     gap: 10px;
 }
+.pvx{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.news_wrapper{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.news_box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    color: #000;
+}
+.gray {
+    color: gray;
+    align-self: flex-start;
+}
 
 @media (max-width: 510px) {
 
@@ -469,5 +495,12 @@ h3 {
     .sun .container {
         width: 100%;
         padding: 30px;
+    }
+
+
+
+    .news_wrapper{
+        flex-direction: column;
+        margin-top: 50px;
     }
 }
