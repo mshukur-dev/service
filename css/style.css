@@ -133,11 +133,38 @@ h3 {
     display: none;
 }
 
+.big_txt {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 100%;
+}
+
+.sub_title {
+    border: 1px solid white;
+    border-radius: 100px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.btn {
+    font-family: "Inter", sans-serif;
+    padding: 12px 100px;
+    border-radius: 100px;
+    background-color: #E53624;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
 
 
 .header {
     background-color: #152C39;
     padding: 32px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.196);
 }
 
 
@@ -161,11 +188,86 @@ h3 {
     gap: 10px;
 }
 
+
+
+.hero {
+    background-color: #152C39;
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+}
+
+
+.hero_main {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: url(../img/hero.png) center/cover no-repeat;
+    padding: 32px 100px;
+}
+
+.hero_text {
+    max-width: 200px;
+}
+
+.hero_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: start;
+}
+
+.hero_promo {
+    display: flex;
+    gap: 12px;
+}
+
 @media (max-width: 510px) {
+
+
     .view {
         display: block;
     }
-    .none{
+
+    .none {
         display: none;
+    }
+
+    .big_txt {
+        font-size: 24px;
+    }
+
+    .sub_title {
+        font-size: 12px;
+    }
+
+
+
+    .header {
+        padding: 25px 0;
+    }
+
+
+
+
+
+
+    .hero .container {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .hero_main {
+        padding: 20px;
+        padding-bottom: 45px;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        background: url(../img/hero_phone.png) center/cover no-repeat;
+    }
+
+    .hero_text {
+        max-width: 100%;
     }
 }
